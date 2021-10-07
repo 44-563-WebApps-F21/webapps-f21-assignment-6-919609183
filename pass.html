@@ -43,6 +43,31 @@ function processPhrase(){
     out.innerHTML = "<h4>correct</h4>"+correct+"<br>"+"<h4>wrong</h4>"+wrong
 }
 </script>
+<div class="container">
+    <img src="Cheetha.jpg" height="200" width="200" onclick="newImage()" id="img" alt="image">
+    <script>
+        var usingImage=1
+        function newImage(){
+            out=document.getElementById("img")
+            switch(usingImage){
+                case 1:
+                    out.src="cheetha.jpg"
+                    usingImage=usingImage+1
+                    break;
+                case 2:
+                    out.src="horse.jpg"
+                    usingImage=usingImage+1
+                    break;
+                case 3:
+                    out.src="urial.jpg"
+                    usingImage=1
+                    break;
+                default:
+                    out.src="cheetha.jpg"                
+            }
+            
+        }
+    </script>
 
 </body>
 </html> 
